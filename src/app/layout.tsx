@@ -1,4 +1,5 @@
 import { Navbar } from "./components/Navbar";
+import Footer4Col from "./components/footer"; // matches src/app/components/footer.tsx
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -15,10 +16,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="bg-white text-black antialiased">
-        {/* ✅ Navbar visible on all pages */}
         <Navbar />
-        {/* Padding to offset fixed navbar height */}
         <main className="pt-0.5">{children}</main>
+        <Footer4Col />
       </body>
     </html>
   );
