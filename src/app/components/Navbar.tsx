@@ -12,7 +12,6 @@ export const Navbar = () => {
   const navLinks = [
     { href: "/", label: "Home" },
     { href: "/clinics", label: "Clinics" },
-    { href: "/stores", label: "Stores" },
     { href: "/therapies", label: "Therapies" },
   ];
 

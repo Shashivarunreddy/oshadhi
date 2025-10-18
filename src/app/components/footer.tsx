@@ -28,7 +28,7 @@ const contactInfo = [
   { icon: MapPin, text: data.contact.address, isAddress: true },
 ];
 
-export default function Footer4Col() {
+export default function Footer() {
   return (
     <footer className="w-full bg-emerald-50 text-gray-900 border-t border-emerald-200 transition-colors duration-300">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
