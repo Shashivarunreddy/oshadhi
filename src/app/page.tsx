@@ -7,13 +7,17 @@ export default function Home() {
       <Navbar />
       <VedioConsultationPopup />
 
-              {/* Header */}
+      {/* Header */}
       <header className="pt-28 pb-8 text-center">
-        <h1 className="text-5xl font-bold text-emerald-700 tracking-wide drop-shadow">Oshadhi</h1>
+        <h1 className="text-5xl font-bold text-emerald-700 tracking-wide drop-shadow">
+          Oshadhi
+        </h1>
         <p className="mt-4 text-xl text-emerald-900">
           Harmony of Ayurveda, Homeopathy, Nutrition, and Unani
         </p>
-        <div className="mt-2 text-emerald-500 text-sm">Herbal medicine and natural therapies</div>
+        <div className="mt-2 text-emerald-500 text-sm">
+          Herbal medicine and natural therapies
+        </div>
       </header>
 
       {/* Hero Section */}
@@ -23,10 +27,12 @@ export default function Home() {
           alt="Herbal medicine"
           className="rounded-2xl shadow-lg w-full max-w-4xl object-cover mb-8"
         />
-        <h2 className="text-3xl font-semibold text-emerald-700 mb-4">Nature’s Healing Wisdom</h2>
+        <h2 className="text-3xl font-semibold text-emerald-700 mb-4">
+          Nature’s Healing Wisdom
+        </h2>
         <p className="text-gray-700 max-w-2xl">
-          Oshadhi blends traditional wellness systems with modern nutritional science to
-          promote natural balance, vitality, and holistic healing.
+          Oshadhi blends traditional wellness systems with modern nutritional
+          science to promote natural balance, vitality, and holistic healing.
         </p>
       </section>
 
@@ -46,7 +52,8 @@ export default function Home() {
             <li>Herbs, yoga, routines</li>
           </ul>
           <p className="text-gray-600 text-sm">
-            Ancient Indian wisdom guiding holistic self-care, prevention, and longevity for body and mind.
+            Ancient Indian wisdom guiding holistic self-care, prevention, and
+            longevity for body and mind.
           </p>
         </div>
         {/* Homeopathy */}
@@ -56,14 +63,17 @@ export default function Home() {
             alt="Homeopathy"
             className="rounded-lg mb-4 w-full h-40 object-cover"
           />
-          <h3 className="text-xl font-bold text-emerald-700 mb-2">Homeopathy</h3>
+          <h3 className="text-xl font-bold text-emerald-700 mb-2">
+            Homeopathy
+          </h3>
           <ul className="text-emerald-900 text-left text-sm mb-2 space-y-1 list-disc list-inside">
             <li>Uses micro-dosed remedies</li>
             <li>Stimulates body’s healing</li>
             <li>Founded on “like cures like”</li>
           </ul>
           <p className="text-gray-600 text-sm">
-            Natural, gentle medicine for chronic symptoms and long-term balance with minimal side effects.
+            Natural, gentle medicine for chronic symptoms and long-term balance
+            with minimal side effects.
           </p>
         </div>
         {/* Nutrition */}
@@ -80,7 +90,8 @@ export default function Home() {
             <li>Supports immunity & vitality</li>
           </ul>
           <p className="text-gray-600 text-sm">
-            Empowering health through mindful eating, seasonal choices, and personalized nutrition.
+            Empowering health through mindful eating, seasonal choices, and
+            personalized nutrition.
           </p>
         </div>
         {/* Unani */}
@@ -97,20 +108,30 @@ export default function Home() {
             <li>Herbs, diet, holistic lifestyle</li>
           </ul>
           <p className="text-gray-600 text-sm">
-            Balances temperament and optimizes wellness through centuries-old herbal practices.
+            Balances temperament and optimizes wellness through centuries-old
+            herbal practices.
           </p>
         </div>
       </section>
 
       {/* Call to Action */}
       <section className="bg-emerald-700 text-white py-12 text-center">
-        <h2 className="text-3xl font-semibold mb-4">Begin Your Wellness Journey</h2>
+        <h2 className="text-3xl font-semibold mb-4">
+          Begin Your Wellness Journey
+        </h2>
         <p className="max-w-2xl mx-auto mb-6 text-emerald-100">
-          Explore therapies, curated guides, and stores for natural healing with Oshadhi.
+          Explore therapies, curated guides, and stores for natural healing with
+          Oshadhi.
         </p>
-        <button className="bg-white text-emerald-700 font-semibold px-8 py-3 rounded-full shadow hover:bg-emerald-100 transition">
-          Learn More
-        </button>
+        <a
+          href="https://www.thinkwellness360.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="bg-white text-emerald-700 font-semibold px-8 py-3 rounded-full shadow hover:bg-emerald-100 transition">
+            Learn More
+          </button>
+        </a>
       </section>
     </main>
   );

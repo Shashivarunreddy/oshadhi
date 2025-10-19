@@ -18,14 +18,14 @@ export default function TherapiesPage() {
       {/* Main Content */}
       <section className="max-w-6xl mx-auto px-6 md:px-10">
         {/* Panchakarma & Physiotherapy Row */}
-        <div className="grid gap-8 md:grid-cols-2 mb-12">
+        <div className="grid gap-8 grid-cols-1 mb-12">
           {/* Panchakarma */}
           <article className="bg-white rounded-2xl shadow-md border border-green-100 hover:shadow-lg transition p-6 flex flex-col">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <img
                 src="/panchakarma.jpg"
                 alt="Panchakarma therapy"
-                className="w-full md:w-1/2 h-52 object-cover rounded-xl shadow-sm"
+                className="w-full md:w-1/2 h-80 object-cover rounded-xl shadow-sm"
               />
               <div className="flex-1">
                 <h2 className="text-2xl font-semibold text-[#2BA84A] mb-2">
@@ -65,9 +65,14 @@ export default function TherapiesPage() {
                 </p>
 
                 <div className="mt-4">
-                  <button className="bg-[#FF6B3D] text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-[#e65d2f] transition">
+                  <a
+                    href="https://docco360.com/alldoctors?navigate=doctors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#FF6B3D] text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-[#e65d2f] transition"
+                  >
                     Book Panchakarma
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -77,50 +82,54 @@ export default function TherapiesPage() {
           <article className="bg-white rounded-2xl shadow-md border border-green-100 hover:shadow-lg transition p-6 flex flex-col">
             <div className="flex flex-col md:flex-row items-center gap-6">
               <img
-                src="/physio.jpg"
+                src="/physio.png"
                 alt="Physiotherapy session"
-                className="w-full md:w-1/2 h-52 object-cover rounded-xl shadow-sm"
+                className="w-full md:w-1/2 h-80 object-cover rounded-xl shadow-sm"
               />
               <div className="flex-1">
                 <h2 className="text-2xl font-semibold text-[#2BA84A] mb-2">
                   Physiotherapy
                 </h2>
                 <p className="text-[#333333] mb-4 text-sm">
-                  Evidence-based physiotherapy for pain relief, mobility
-                  restoration, and functional rehabilitation. Our therapists use
-                  manual therapy, exercises, and electrotherapy modalities when
-                  required.
+                  Physiotherapy helps restore mobility, relieve pain, and
+                  enhance overall physical function. Each session is
+                  individually designed to promote natural recovery and
+                  long-term strength.
                 </p>
 
                 <ul className="text-[#2BA84A] text-sm list-disc list-inside space-y-2 mb-4">
                   <li>
-                    <strong>Orthopaedic Rehab:</strong> Post-op recovery, joint
-                    pain, sports injuries.
+                    <strong>Initial Assessment:</strong> Personalized evaluation
+                    to understand condition and goals.
                   </li>
                   <li>
-                    <strong>Neurological Rehab:</strong> Stroke, Parkinson’s,
-                    nerve injuries.
+                    <strong>Manual & Exercise Therapy:</strong> Hands-on
+                    techniques and guided movement correction.
                   </li>
                   <li>
-                    <strong>Pain Management:</strong> Back, neck, and chronic
-                    pain.
+                    <strong>Pain & Posture Care:</strong> Targeted methods for
+                    chronic pain and alignment issues.
                   </li>
                   <li>
-                    <strong>Functional Training:</strong> Balance, gait, and
-                    posture correction.
+                    <strong>Home Program:</strong> Easy follow-up exercises for
+                    sustained results.
                   </li>
                 </ul>
 
                 <p className="text-[#555] text-sm">
-                  Sessions typically last{" "}
-                  <span className="font-medium">30–60 minutes</span> with
-                  progressive plans and home exercise support.
+                  Typical session:{" "}
+                  <span className="font-medium">30–60 minutes</span> Depending on need, regular sessions ensure consistent recovery and improved mobility.Our therapists closely track your progress.
                 </p>
 
                 <div className="mt-4">
-                  <button className="bg-[#FF6B3D] text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-[#e65d2f] transition">
+                  <a
+                    href="https://docco360.com/alldoctors?navigate=doctors"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#FF6B3D] text-white font-semibold px-6 py-2 rounded-full shadow hover:bg-[#e65d2f] transition"
+                  >
                     Book Physiotherapy
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -180,9 +189,14 @@ export default function TherapiesPage() {
                 </h4>
                 <p className="text-[#333333] text-sm flex-1">{s.desc}</p>
                 <div className="mt-3">
-                  <button className="bg-[#FF6B3D] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#e65d2f] transition">
+                  <a
+                    href="https://www.thinkwellness360.com/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#FF6B3D] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-[#e65d2f] transition"
+                  >
                     Learn More
-                  </button>
+                  </a>
                 </div>
               </div>
             ))}
