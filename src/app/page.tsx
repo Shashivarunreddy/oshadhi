@@ -1,11 +1,13 @@
 import { Navbar } from "./components/Navbar";
+import { VedioConsultationPopup } from "./components/vedioConsultationpopup";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-green-100 to-emerald-100 text-gray-800 font-sans pb-0">
       <Navbar />
+      <VedioConsultationPopup />
 
-      {/* Header */}
+              {/* Header */}
       <header className="pt-28 pb-8 text-center">
         <h1 className="text-5xl font-bold text-emerald-700 tracking-wide drop-shadow">Oshadhi</h1>
         <p className="mt-4 text-xl text-emerald-900">
