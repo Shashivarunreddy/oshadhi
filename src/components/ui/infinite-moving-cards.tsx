@@ -43,7 +43,7 @@ export function InfiniteMovingCards({
   return (
     <div ref={containerRef} className="flex overflow-hidden whitespace-nowrap">
       {items.map((item, idx) => (
-        <div key={idx} className="mx-4 w-80 shrink-0 bg-white dark:bg-gray-800 shadow rounded-lg p-6">
+        <div key={idx} className="mx-2 sm:mx-4 w-[90%] md:w-[40%] lg:w-[25%] flex-shrink-0 bg-white dark:bg-gray-800 shadow rounded-lg p-6">
           <blockquote className="italic mb-2">{item.quote}</blockquote>
           <div className="font-semibold">{item.name}</div>
           <div className="text-sm text-gray-500">{item.title}</div>
