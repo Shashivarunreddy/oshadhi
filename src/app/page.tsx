@@ -1,6 +1,6 @@
 import { Navbar } from "./components/Navbar";
 import { VedioConsultationPopup } from "./components/vedioConsultationpopup";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-green-100 to-emerald-100 text-gray-800 font-sans pb-0">
@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative flex flex-col items-center text-center px-6">
-        <img
+        <Image
           src="/banner.jpg"
           alt="Herbal medicine"
           className="rounded-2xl shadow-lg w-full max-w-4xl object-cover mb-8"
@@ -40,7 +40,7 @@ export default function Home() {
       <section className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6 md:px-10 py-16">
         {/* Ayurveda */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
-          <img
+          <Image
             src="/Ayurveda.jpg"
             alt="Ayurveda"
             className="rounded-lg mb-4 w-full h-40 object-cover"
@@ -58,7 +58,7 @@ export default function Home() {
         </div>
         {/* Homeopathy */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
-          <img
+          <Image
             src="/Homeopathy.jpg"
             alt="Homeopathy"
             className="rounded-lg mb-4 w-full h-40 object-cover"
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
         {/* Nutrition */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
-          <img
+          <Image
             src="/Nutrition.jpg"
             alt="Nutrition"
             className="rounded-lg mb-4 w-full h-40 object-cover"
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
         {/* Unani */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
-          <img
+          <Image
             src="/Unani.jpg"
             alt="Unani"
             className="rounded-lg mb-4 w-full h-40 object-cover"

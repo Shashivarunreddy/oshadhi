@@ -1,5 +1,5 @@
 import { Navbar } from "./components/Navbar";
-import Footer from "./components/footer"; // matches src/app/components/footer.tsx
+import Footer from "./components/footer";
 import { InfiniteMovingCardsDemo } from "./components/testimonials";
 import "./globals.css";
 import type { Metadata } from "next";
