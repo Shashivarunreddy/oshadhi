@@ -42,17 +42,17 @@ export default function Footer() {
               {data.company.description}
             </p>
           </div>
+
           {/* Services */}
           <div className="lg:col-span-1 text-center sm:text-left flex flex-col">
-            <h3 className="text-lg font-bold text-emerald-700 pb-2">
-              Our Services
-            </h3>
+            <h3 className="text-lg font-bold text-emerald-700 pb-2">Our Services</h3>
             <ul className="mt-4 space-y-2 text-sm">
               {serviceLinks.map(({ text }) => (
                 <li key={text} className="text-emerald-900 font-normal">{text}</li>
               ))}
             </ul>
           </div>
+
           {/* Contact */}
           <div className="lg:col-span-2 text-center sm:text-left">
             <h3 className="text-lg font-bold text-emerald-700">Contact Us</h3>
@@ -69,7 +69,7 @@ export default function Footer() {
                       <span className="text-emerald-900 font-normal">{text}</span>
                     )}
                   </div>
-                  {/* Social Media Uniform-size Logos */}
+
                   {isAddress && (
                     <div className="mt-2 flex gap-4 justify-center sm:justify-start">
                       <a
@@ -81,10 +81,12 @@ export default function Footer() {
                         <Image
                           src="/instagram.png"
                           alt="Instagram"
+                          width={32}
+                          height={32}
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
-                          style={{ minWidth: 32, minHeight: 32, maxWidth: 32, maxHeight: 32 }}
                         />
                       </a>
+
                       <a
                         href="https://youtube.com/"
                         target="_blank"
@@ -94,10 +96,12 @@ export default function Footer() {
                         <Image
                           src="/youtube.png"
                           alt="YouTube"
+                          width={32}
+                          height={32}
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
-                          style={{ minWidth: 32, minHeight: 32, maxWidth: 32, maxHeight: 32 }}
                         />
                       </a>
+
                       <a
                         href="https://wa.me/919876543210"
                         target="_blank"
@@ -107,10 +111,12 @@ export default function Footer() {
                         <Image
                           src="/whatsapp.svg"
                           alt="WhatsApp"
+                          width={50}
+                          height={50}
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
-                          style={{ minWidth: 50, minHeight: 50, maxWidth: 50, maxHeight: 50 }}
                         />
                       </a>
+
                       <a
                         href="https://facebook.com/"
                         target="_blank"
@@ -120,8 +126,9 @@ export default function Footer() {
                         <Image
                           src="/facebook.png"
                           alt="Facebook"
+                          width={32}
+                          height={32}
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
-                          style={{ minWidth: 32, minHeight: 32, maxWidth: 32, maxHeight: 32 }}
                         />
                       </a>
                     </div>
@@ -131,6 +138,7 @@ export default function Footer() {
             </ul>
           </div>
         </div>
+
         {/* Bottom */}
         <div className="mt-12 border-t border-emerald-200 pt-6">
           <div className="text-center sm:flex sm:justify-between sm:text-left">

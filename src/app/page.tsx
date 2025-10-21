@@ -1,6 +1,7 @@
 import { Navbar } from "./components/Navbar";
 import { VedioConsultationPopup } from "./components/vedioConsultationpopup";
 import Image from "next/image";
+
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-emerald-50 via-green-100 to-emerald-100 text-gray-800 font-sans pb-0">
@@ -22,11 +23,13 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="relative flex flex-col items-center text-center px-6">
-        <Image
-          src="/banner.jpg"
-          alt="Herbal medicine"
-          className="rounded-2xl shadow-lg w-full max-w-4xl object-cover mb-8"
-        />
+       <Image
+        src="/banner.jpg"
+        alt="Herbal medicine"
+        width={1200}  // specify the actual width of your image
+        height={600}  // specify the actual height of your image
+        className="rounded-2xl shadow-lg w-full max-w-4xl object-cover mb-8"
+/>
         <h2 className="text-3xl font-semibold text-emerald-700 mb-4">
           Nature’s Healing Wisdom
         </h2>
@@ -41,10 +44,13 @@ export default function Home() {
         {/* Ayurveda */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
           <Image
-            src="/Ayurveda.jpg"
-            alt="Ayurveda"
-            className="rounded-lg mb-4 w-full h-40 object-cover"
-          />
+          src="/Ayurveda.jpg"
+          alt="Ayurveda"
+          width={400}
+          height={160}
+          className="rounded-lg mb-4 w-full h-40 object-cover"
+           />
+
           <h3 className="text-xl font-bold text-emerald-700 mb-2">Ayurveda</h3>
           <ul className="text-emerald-900 text-left text-sm mb-2 space-y-1 list-disc list-inside">
             <li>Balances Vata, Pitta, Kapha</li>
@@ -56,11 +62,15 @@ export default function Home() {
             longevity for body and mind.
           </p>
         </div>
+
+        {/* Similarly add width and height for other Images */}
         {/* Homeopathy */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
           <Image
             src="/Homeopathy.jpg"
             alt="Homeopathy"
+            width={400}
+            height={160}
             className="rounded-lg mb-4 w-full h-40 object-cover"
           />
           <h3 className="text-xl font-bold text-emerald-700 mb-2">
@@ -68,7 +78,7 @@ export default function Home() {
           </h3>
           <ul className="text-emerald-900 text-left text-sm mb-2 space-y-1 list-disc list-inside">
             <li>Uses micro-dosed remedies</li>
-            <li>Stimulates body’s healing</li>
+            <li>Stimulates body&apos;s healing</li>
             <li>Founded on “like cures like”</li>
           </ul>
           <p className="text-gray-600 text-sm">
@@ -76,11 +86,14 @@ export default function Home() {
             with minimal side effects.
           </p>
         </div>
+
         {/* Nutrition */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
           <Image
             src="/Nutrition.jpg"
             alt="Nutrition"
+            width={400}
+            height={160}
             className="rounded-lg mb-4 w-full h-40 object-cover"
           />
           <h3 className="text-xl font-bold text-emerald-700 mb-2">Nutrition</h3>
@@ -94,11 +107,14 @@ export default function Home() {
             personalized nutrition.
           </p>
         </div>
+
         {/* Unani */}
         <div className="bg-white rounded-xl shadow-md border border-emerald-100 hover:shadow-xl transition p-5 text-center flex flex-col items-center">
           <Image
             src="/Unani.jpg"
             alt="Unani"
+            width={400}
+            height={160}
             className="rounded-lg mb-4 w-full h-40 object-cover"
           />
           <h3 className="text-xl font-bold text-emerald-700 mb-2">Unani</h3>
