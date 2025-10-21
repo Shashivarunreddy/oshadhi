@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export default function TherapiesPage() {
   return (
@@ -22,7 +23,7 @@ export default function TherapiesPage() {
           {/* Panchakarma */}
           <article className="bg-white rounded-2xl shadow-md border border-green-100 hover:shadow-lg transition p-6 flex flex-col">
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <img
+              <Image
                 src="/panchakarma.jpg"
                 alt="Panchakarma therapy"
                 className="w-full md:w-1/2 h-80 object-cover rounded-xl shadow-sm"
@@ -34,7 +35,7 @@ export default function TherapiesPage() {
                 <p className="text-[#333333] mb-4 text-sm">
                   Panchakarma is a classical Ayurvedic detoxification and
                   rejuvenation protocol. It aims to cleanse deep-seated toxins,
-                  restore doshic balance and strengthen the body's natural
+                  restore doshic balance and strengthen the body&apos;s natural
                   immunity.
                 </p>
 
@@ -81,7 +82,7 @@ export default function TherapiesPage() {
           {/* Physiotherapy */}
           <article className="bg-white rounded-2xl shadow-md border border-green-100 hover:shadow-lg transition p-6 flex flex-col">
             <div className="flex flex-col md:flex-row items-center gap-6">
-              <img
+              <Image
                 src="/physio.png"
                 alt="Physiotherapy session"
                 className="w-full md:w-1/2 h-80 object-cover rounded-xl shadow-sm"
@@ -118,7 +119,9 @@ export default function TherapiesPage() {
 
                 <p className="text-[#555] text-sm">
                   Typical session:{" "}
-                  <span className="font-medium">30–60 minutes</span> Depending on need, regular sessions ensure consistent recovery and improved mobility.Our therapists closely track your progress.
+                  <span className="font-medium">30–60 minutes</span> Depending
+                  on need, regular sessions ensure consistent recovery and
+                  improved mobility.Our therapists closely track your progress.
                 </p>
 
                 <div className="mt-4">
@@ -179,7 +182,7 @@ export default function TherapiesPage() {
                 key={s.title}
                 className="bg-white rounded-xl shadow-md border border-green-100 p-4 flex flex-col hover:shadow-lg transition"
               >
-                <img
+                <Image
                   src={s.img}
                   alt={s.title}
                   className="w-full h-40 object-cover rounded-lg mb-3"

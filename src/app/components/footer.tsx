@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 
 const data = {
@@ -78,7 +78,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="Instagram"
                       >
-                        <img
+                        <Image
                           src="/instagram.png"
                           alt="Instagram"
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
@@ -91,7 +91,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="YouTube"
                       >
-                        <img
+                        <Image
                           src="/youtube.png"
                           alt="YouTube"
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
@@ -104,7 +104,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="WhatsApp"
                       >
-                        <img
+                        <Image
                           src="/whatsapp.svg"
                           alt="WhatsApp"
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
@@ -117,7 +117,7 @@ export default function Footer() {
                         rel="noopener noreferrer"
                         aria-label="Facebook"
                       >
-                        <img
+                        <Image
                           src="/facebook.png"
                           alt="Facebook"
                           className="w-8 h-8 object-contain rounded-full hover:opacity-80 transition"
